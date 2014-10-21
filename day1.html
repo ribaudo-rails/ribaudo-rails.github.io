@@ -20,50 +20,57 @@
 
           <p>Here is a link to the code from the day - <a href="http://jsbin.com/sirema/edit?html,css">http://jsbin.com/sirema/edit?html,css</a></p>
 
-          <p>HTML tags are instructions that tell the browser whether some text should be a paragraph, a list item, a link or some other kind of content.</p>
-          <p>Here is an example form:</p>
-          <pre class="">
-<form action="#">
-  <label for="first_name">First name:</label>
-  <input id="first_name" name="first_name" type="text"><br>
-  <input type="submit">
-</form></pre>
-        <p>We can interact with forms through <code>input</code> elements. In this case, the input is a text field. Other input fields include radio buttons, checkboxes and dropdowns. Labels, on the other hand, describe the purpose of a particular input field.</p>
-        <p>We can connect labels with inputs by matching up the <code>for</code> attribute on a label and the <code>id</code> attribute on an input. They need to be spelled exactly the same to properly connect.</p>
+          <p>HTML tags are instructions that tell the browser whether some text should be a paragraph, a list item, a link or some other kind of content.We talked about these tags today:</p>
 
-        </div>
-        <div>
-          <h2>Displaying a page in Rails</h2>
-          <iframe src="http://player.vimeo.com/video/109022503" width="700" height="440" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-        </div>
-        <h3>Starting a new Rails app</h3>
-        <p>Use this command to create a Rails app:</p>
-        <pre>
-rails new my_app</pre>
-        <p>where <code>my_app</code> is your app's name.</p>
-        <p>Then, you need to go inside the app's directory in terminal (the black box at the bottom of the screen). <code>cd</code> stands for "change directory"</p>
-        <pre>
-cd my_app</pre>
-        <p>If you want to go back to the home directory, you can just use the command <code>cd</code> by itself.</p>
-        <h3>Running a Rails app</h3>
-        <p>Once you're inside your app's folder, you can use this command to start your rails server:</p>
-        <pre>
-rails server</pre>
-        <p>Then, click on "preview" in the top menu and select port 3000</p>
-        <h3>Creating a route</h3>
-        <p>All routes are stored in the routes file, which you can find at config > routes.rb</p>
-        <p>A route looks like this:</p>
-        <pre>
-get "/my_form" => "application#form"</pre>
-        <p>There are a few pieces to a route. <code>"/myform"</code> is the URL that the user types in the address bar to access this route. <code>application</code> is the controller name. We'll keep this the same for every route right now. <code>form</code> is the action name. It can be named whatever you want, but the action name should match up with an HTML file in the application folder.</p>
-        <h3>Creating an HTML page</h3>
-        <p>Web pages in Rails apps are called views. We can find them in app > views</p>
-        <p>First, we need to create a folder called <code>application</code> inside the views folder. This folder name needs to match up with the controller name from the route</p>
-        <p>Next, we need to create an HTML file called <code>form.html</code> inside the application folder. This filename needs to match up with the action name from the route.</p>
-        <p>Now, just write normal HTML code inside the file. Don't worry about the body or head elements - we'll talk about those later.</p>
+          <pre class="prettyprint">
+<!-- paragraphs -->
+<p>I'm a paragraph</p>
+
+<!-- headings -->
+<h1>I'm big and bold<h1>
+<h6>I'm a lot smaller</h6>
+
+<!-- lists  -->
+<ul>
+  <li>List item one</li>
+  <li>List item two</li>
+  <li>List item three</li>
+</ul>
+
+<!-- strong -->
+<strong>I'm important and in bold</strong>
+
+<!-- em -->
+<em>I'm important and in italics</em>
+
+<!-- links -->
+<a href="http://some-website.com">Text that gets displayed</a>
+
+<!-- images -->
+<img src="http://link-to-image" alt="description-of-image"></pre>
+
+        <p>We also talked about CSS. While HTML is used to <strong>structure</strong> content, CSS is used to <strong>style</strong> content. In other words, HTML deals with what content is and CSS deals with how it should look.</p>
+
+        <p>If we want to make an h1 red, we can do this with CSS</p>
+
+        <pre class="prettyprint">
+h1 {
+  color: red;
+}</pre>
+        <p>This is called a CSS rule. It has a few different parts. The <code>h1</code> is called the <strong>selector</strong>. It selects the HTML elements that will be affected. Then there are the <code>{ }</code>. These curly braces hold all of the <strong>declarations</strong> in the rule. Each declaration usually takes up a full line. There's only one declaration in this rule. A declaration has two parts - a property and a value. <code>color</code> is the <strong>property</strong> and <code>red</code> is the value. They are separated by a <code>:</code> and each declaration ends with a <code>;</code></p>
         <h2>Homework</h2>
-        <p>Estimated time: < 15 min</p>
-        <p>Today's homework is pretty short. All you need to do is create a completely new Rails app (that means you can't use what we built in class) and add an HTML page that contains a form. The form can be for anything you choose. You should be able to enter a URL into the address bar and see the page with the form.</p>
+        <p>Estimated time: < 30 min</p>
+        <p>Create a web page about your favorite _________. You can fill in the blank with a movie, musician, game, person or whatever you like. Make sure you use the following tags:</p>
+        <ul>
+          <li>h1</li>
+          <li>p</li>
+          <li>ul</li>
+          <li>li</li>
+          <li>strong</li>
+          <li>img</li>
+          <li>a</li>
+        </ul>
+        <p>Also make sure you add CSS to your page in some way.</p>
       </div>
     </div>
   </div>
