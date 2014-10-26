@@ -1,0 +1,88 @@
+<html>
+<head>
+  <title></title>
+  <script src="http://code.jquery.com/jquery.min.js"></script>
+  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+  <link rel="stylesheet" href="screens.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <h1>Day 2 <small><a href="index.html">back to index</a></small></h1>
+        <p>Today we talked about inline vs block elements, classes, and the box model.</p>
+
+        <div>
+          <h2>Inline vs block</h2>
+          <p>Link to video - <a href="http://vimeo.com/78503848">http://vimeo.com/78503848"</a></p>
+
+          <p><strong>Block level</strong> elements take up as much width as they can:</p>
+          <pre>
+<--------takes up this much space-------------------------------------------------------->
+<h1>Your super awesome amazing content</h1></pre>
+
+          <p>examples of block level elements: div, p, ul, li</p>
+
+          <p>while <strong>Inline</strong> elements take up as much width as they need:</p>
+
+          <pre>
+   <----takes up this much space---->
+<b>Your super awesome amazing content</b></pre>
+
+          <p>examples of inline elements: span, a, img, strong</p>
+
+          <h2>Classes</h2>
+
+          <iframe src="http://player.vimeo.com/video/110067455" width="700" height="440" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          <p>The biggest thing to remember with classes is that they start with a <code>.</code> in CSS. For example, <code>div</code> is an element selector, but <code>.first</code> is a class selector. You don't need to use the <code>.</code> when you're applying the class in HTML.</p>
+          <h2>The box model</h2>
+
+          <p>Link to video - <a href="https://vimeo.com/110067455">https://vimeo.com/110067455</a></p>
+          <p>Link to code - <a href="http://jsbin.com/xadeju/1/edit?html,css,output">http://jsbin.com/xadeju/1/edit?html,css,output</a></p>
+
+          <p>The elements of the box model are:</p>
+          <ul>
+            <li>width</li>
+            <li>height</li>
+            <li>padding</li>
+            <li>border</li>
+            <li>margin</li>
+          </ul>
+
+          <p>Width and height set the shape of an element. Padding sets the room between content and an element's border. Border sets the width, style and color of the border. Margin sets the room between elements.</p>
+
+
+
+
+        <h2>Homework</h2>
+        <p>Starting with this page ( <a href="http://jsbin.com/woluba/1/edit?html,css,output">http://jsbin.com/woluba/1/edit?html,css,output</a> ), recreate the following image:</p>
+
+        <div class="hw-img">
+          <img src="images/day2/hw.png" alt="">
+        </div>
+
+        <p>Estimated time: < 30 min</p>
+
+      </div>
+    </div>
+  </div>
+  <footer></footer>
+  <script>
+String.prototype.escapeHTML = function () {
+  return(
+    this.replace(/>/g,'&gt;').
+         replace(/</g,'&lt;').
+         replace(/"/g,'&quot;')
+  );
+};
+var elems = document.getElementsByTagName('pre');
+for (i=0; i<elems.length;i++) {
+  if (elems[i]) {
+    elems[i].innerHTML = elems[i].innerHTML.escapeHTML();
+  }
+}
+  </script>
+</body>
+</html>
