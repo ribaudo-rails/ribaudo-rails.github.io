@@ -1,0 +1,82 @@
+<html>
+<head>
+  <title></title>
+  <script src="http://code.jquery.com/jquery.min.js"></script>
+  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+  <link rel="stylesheet" href="screens.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <h1>Day 4 <small><a href="index.html">back to index</a></small></h1>
+        <p>Today we went over centering and inline-block.</p>
+
+        <h2>Centering</h2>
+        <iframe src="http://player.vimeo.com/video/114603425" width="700" height="440" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+        <p>There are two ways to center content in HTML: centering <em>inside</em> and element and centering <em>the actual</em> element.</p>
+
+        <p>We centered content inside an element with:</p>
+
+        <pre class="prettyprint">
+text-align: center;</pre>
+
+        <p>This is most useful for center text inside an element.</p>
+
+        <p>If we want to center an actual element, instead of what's inside that element, we can use:</p>
+
+        <pre class="prettyprint">
+margin-left: auto;
+margin-right: auto;</pre>
+
+        <p>This evens out the space on both the left and right sides of an element. This only works if an element is block-level and takes up less space than the width of the page.</p>
+
+
+        <h2>Navbars</h2>
+
+        <iframe src="http://player.vimeo.com/video/114605987" width="700" height="440" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+        <p>We created a navbar by changing the list items in the nav element from <code>display:block;</code> to:</p>
+        <pre class="prettyprint">
+display: inline-block;</pre>
+
+        <p>This makes each element take up only as much space as it needs, instead of the full width of the page.</p>
+
+
+
+        <div><a href="http://jsbin.com/fenozu/6/edit">JS Bin link to code</a></div>
+
+        <h2>Homework</h2>
+
+        <p>Create a similar page on a topic that's not Chicago. Your page can be on anything that you're interested in. Make sure you:</p>
+        <ul>
+          <li>include a Google web font</li>
+          <li>center at least one thing on the page</li>
+          <li>create a navbar with inline-block</li>
+          <li>have page sections on your page (like history, attractions, etc.</li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+  <footer></footer>
+  <script>
+String.prototype.escapeHTML = function () {
+  return(
+    this.replace(/>/g,'&gt;').
+         replace(/</g,'&lt;').
+         replace(/"/g,'&quot;')
+  );
+};
+var elems = document.getElementsByTagName('pre');
+for (i=0; i<elems.length;i++) {
+  if (elems[i]) {
+    elems[i].innerHTML = elems[i].innerHTML.escapeHTML();
+  }
+}
+  </script>
+</body>
+</html>
