@@ -1,0 +1,71 @@
+<html>
+<head>
+  <title></title>
+
+  <script src="http://code.jquery.com/jquery.min.js"></script>
+  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+  <link rel="stylesheet" href="screens.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <h1>Day 5 <small><a href="index.html">back to index</a></small></h1>
+        <p>Today we practiced building our own sites from scratch.</p>
+
+
+        <h2>Homework</h2>
+
+        <p>Rewatch the video on inline-block:</p>
+
+      <iframe src="http://player.vimeo.com/video/114605987" width="700" height="440" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+      <p>We created a horizontal list by adding the following CSS for each list item in the navbar:</p>
+      <pre class="prettyprint">
+display: inline-block;</pre>
+        <p><a href="http://jsbin.com/fenozu/6/edit">JS Bin link to code</a></p>
+
+
+        <p>Then, complete the exercises below. Use the inline block technique to lay out all the items horizontally instead of vertically on each page. For example, in the first exercise:</p>
+
+        <p>
+          <img src="images/day5/before.png" alt="">
+        </p>
+
+        <p>should look like:</p>
+
+        <p>
+          <img src="images/day5/after.png" alt="">
+        </p>
+
+        <p>Don't edit the HTML on each page, just change the CSS. You might need to adjust the size of the output tab or blow out the page into a new tab by click the black arrow <img src="images/day5/arrow.png" alt=""></p>
+
+        <ol>
+          <li><a href="http://jsbin.com/sesoci/2/edit">http://jsbin.com/sesoci/2/edit</a></li>
+          <li><a href="http://jsbin.com/xoxoru/2/edit">http://jsbin.com/xoxoru/2/edit</a></li>
+          <li><a href="http://jsbin.com/leqiwo/1/edit?html,css,output">http://jsbin.com/leqiwo/1/edit?html,css,output</a></li>
+        </ol>
+
+      </div>
+    </div>
+  </div>
+  <footer></footer>
+  <script>
+String.prototype.escapeHTML = function () {
+  return(
+    this.replace(/>/g,'&gt;').
+         replace(/</g,'&lt;').
+         replace(/"/g,'&quot;')
+  );
+};
+var elems = document.getElementsByTagName('pre');
+for (i=0; i<elems.length;i++) {
+  if (elems[i]) {
+    elems[i].innerHTML = elems[i].innerHTML.escapeHTML();
+  }
+}
+  </script>
+</body>
+</html>
