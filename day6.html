@@ -1,0 +1,75 @@
+<html>
+<head>
+  <title></title>
+
+  <script src="http://code.jquery.com/jquery.min.js"></script>
+  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+  <link rel="stylesheet" href="screens.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <h1>Day 6 <small><a href="index.html">back to index</a></small></h1>
+        <p>Today, Stella kept working on her musical artists page and Ava started a page on tennis.</p>
+
+
+        <h2>Homework</h2>
+
+        <p>Follow along with this video to include Bootstrap and add a button:</p>
+
+        <iframe src="http://player.vimeo.com/video/115356074" width="700" height="440" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+        <p>Follow along with this video to style images with Bootstrap:</p>
+
+        <iframe src="http://player.vimeo.com/video/115356075" width="700" height="440" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+        <p><a href="http://jsbin.com/weheri/1/edit?html">JS Bin link to code</a></p>
+
+
+        <p>Then, practice with the following exercises.</p>
+
+        <ol>
+          <li>
+            <p>Starting with the code in this link (<a href="http://jsbin.com/tinela/1/edit">http://jsbin.com/tinela/1/edit</a>) recreate the image below using Bootstrap</p>
+            <div>
+              <img src="images/day6/prob_1_1.png" alt="">
+            </div>
+          </li>
+          <li>
+            <p>Starting with the code in this link (<a href="http://jsbin.com/cajuso/1/edit">http://jsbin.com/cajuso/1/edit</a>) recreate the image below using Bootstrap</p>
+            <div>
+              <img src="images/day6/prob_2_1.png" alt="">
+            </div>
+          </li>
+          <li>
+            <p>Starting with the code in this link (<a href="http://jsbin.com/zuharo/1/edit">http://jsbin.com/zuharo/1/edit</a>) recreate the image below using Bootstrap</p>
+            <div>
+              <img src="images/day6/prob_3_1.png" alt="">
+            </div>
+          </li>
+        </ol>
+
+      </div>
+    </div>
+  </div>
+  <footer></footer>
+  <script>
+String.prototype.escapeHTML = function () {
+  return(
+    this.replace(/>/g,'&gt;').
+         replace(/</g,'&lt;').
+         replace(/"/g,'&quot;')
+  );
+};
+var elems = document.getElementsByTagName('pre');
+for (i=0; i<elems.length;i++) {
+  if (elems[i]) {
+    elems[i].innerHTML = elems[i].innerHTML.escapeHTML();
+  }
+}
+  </script>
+</body>
+</html>
