@@ -1,0 +1,52 @@
+<html>
+<head>
+  <title></title>
+
+  <script src="http://code.jquery.com/jquery.min.js"></script>
+  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+  <link rel="stylesheet" href="screens.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <h1>Day 7 <small><a href="index.html">back to index</a></small></h1>
+        <p>Today, we started on new sites using Bootstrap</p>
+
+
+        <h2>Homework</h2>
+
+        <p>1. Finish working on the sites we started last week and bring them in. We'll copy those pages into a new format.</p>
+
+        <p>2. Follow along with these videos to set up a new Rails application inside Nitrous. It shouldn't take more than 10 -15 min. Please email me if you have any questions.</p>
+
+        <h3>Intro to Nitrous</h3>
+        <iframe src="http://player.vimeo.com/video/117321970" width="700" height="440" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+        <h3>Creating a new Rails application</h3>
+        <iframe src="http://player.vimeo.com/video/117321971" width="700" height="440" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+
+      </div>
+    </div>
+  </div>
+  <footer></footer>
+  <script>
+String.prototype.escapeHTML = function () {
+  return(
+    this.replace(/>/g,'&gt;').
+         replace(/</g,'&lt;').
+         replace(/"/g,'&quot;')
+  );
+};
+var elems = document.getElementsByTagName('pre');
+for (i=0; i<elems.length;i++) {
+  if (elems[i]) {
+    elems[i].innerHTML = elems[i].innerHTML.escapeHTML();
+  }
+}
+  </script>
+</body>
+</html>
