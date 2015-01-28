@@ -1,0 +1,61 @@
+<html>
+<head>
+  <title></title>
+
+  <script src="http://code.jquery.com/jquery.min.js"></script>
+  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+  <link rel="stylesheet" href="screens.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <h1>Day 8 <small><a href="index.html">back to index</a></small></h1>
+        <p>Today, we started processing forms in a Rails app. The following videos cover what we went over in class.</p>
+
+        <h3>Setting up a Rails app for forms</h3>
+        <iframe src="http://player.vimeo.com/video/113648521" width="700" height="440" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+        <h3>HTML forms</h3>
+        <iframe src="http://player.vimeo.com/video/113648660" width="700" height="440" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+        <h3>The params hash</h3>
+        <iframe src="http://player.vimeo.com/video/113648661" width="700" height="440" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+
+
+
+        <h2>Homework</h2>
+
+        <p>Create another working form in the app we started working on last week. The form should:</p>
+
+        <ul>
+          <li>let a user type in the name of a city</li>
+          <li>when the user hits submit, she should get taken to a page that says something like "Welcome to Chicago!" depending on what city was typed in</li>
+        </ul>
+
+        <p>Use the videos as notes if you need to remember certain commands.</p>
+
+      </div>
+    </div>
+  </div>
+  <footer></footer>
+  <script>
+String.prototype.escapeHTML = function () {
+  return(
+    this.replace(/>/g,'&gt;').
+         replace(/</g,'&lt;').
+         replace(/"/g,'&quot;')
+  );
+};
+var elems = document.getElementsByTagName('pre');
+for (i=0; i<elems.length;i++) {
+  if (elems[i]) {
+    elems[i].innerHTML = elems[i].innerHTML.escapeHTML();
+  }
+}
+  </script>
+</body>
+</html>
