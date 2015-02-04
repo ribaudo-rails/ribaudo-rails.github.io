@@ -1,0 +1,57 @@
+<html>
+<head>
+  <title></title>
+
+  <script src="http://code.jquery.com/jquery.min.js"></script>
+  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+  <link rel="stylesheet" href="screens.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <h1>Day 9 <small><a href="index.html">back to index</a></small></h1>
+        <p>Today, we learned about labels and multiple form inputs</p>
+
+        <h3>Working with multiple form ipnuts</h3>
+        <iframe src="http://player.vimeo.com/video/113648663" width="700" height="440" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+        <h3>Using form labels</h3>
+        <iframe src="http://player.vimeo.com/video/113648666" width="700" height="440" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+
+        <h2>Homework</h2>
+
+        <p>1. Finish your mad-libs from last week. Try to make them look nice with CSS as well. I'm excited to see what the finished products look like!</p>
+
+        <p>2. Follow along with these videos. They'll introduce some important programming concepts. You'll be working with the same application, so you won't need to create a completely new app. But try to type along with me and let me know if you get stuck for more than 10 minutes.</p>
+
+        <h3>Using variables in Rails</h3>
+        <iframe src="http://player.vimeo.com/video/113648668" width="700" height="440" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+        <h3>if-statements</h3>
+        <iframe src="http://player.vimeo.com/video/113648750" width="700" height="440" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+      </div>
+    </div>
+  </div>
+  <footer></footer>
+  <script>
+String.prototype.escapeHTML = function () {
+  return(
+    this.replace(/>/g,'&gt;').
+         replace(/</g,'&lt;').
+         replace(/"/g,'&quot;')
+  );
+};
+var elems = document.getElementsByTagName('pre');
+for (i=0; i<elems.length;i++) {
+  if (elems[i]) {
+    elems[i].innerHTML = elems[i].innerHTML.escapeHTML();
+  }
+}
+  </script>
+</body>
+</html>
