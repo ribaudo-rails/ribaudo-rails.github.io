@@ -1,0 +1,62 @@
+<html>
+<head>
+  <title></title>
+
+  <script src="http://code.jquery.com/jquery.min.js"></script>
+  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+  <link rel="stylesheet" href="screens.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <h1>Day 1 <small><a href="index.html">back to index</a></small></h1>
+        <p>Today, we learned about JavaScript functions</p>
+
+        <h3>Alert boxes</h3>
+        <iframe src="http://player.vimeo.com/video/123001453" width="700" height="394" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+        <h3>Variables</h3>
+        <iframe src="http://player.vimeo.com/video/123004567" width="700" height="394" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+        <h3>Concatenation and comments</h3>
+        <iframe src="http://player.vimeo.com/video/123007851" width="700" height="394" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+        <h3>Intro to functions</h3>
+        <iframe src="http://player.vimeo.com/video/123007596" width="700" height="394" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+        <h3>Functions with multiple parameters</h3>
+        <iframe src="http://player.vimeo.com/video/123007566" width="700" height="394" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+        <h3>Numbers</h3>
+        <iframe src="http://player.vimeo.com/video/123008861" width="700" height="394" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+
+
+        <h2>Homework</h2>
+
+        <p>Create a function that takes in two inputs: <code>color</code> and <code>food</code>. When you run the function, it should pop up an alert box that says uses those inputs. For example, "My favorite color is red and I love pizza!" Or, "I sort of like green and I hate broccoli."</p>
+
+      </div>
+    </div>
+  </div>
+  <footer></footer>
+  <script>
+String.prototype.escapeHTML = function () {
+  return(
+    this.replace(/>/g,'&gt;').
+         replace(/</g,'&lt;').
+         replace(/"/g,'&quot;')
+  );
+};
+var elems = document.getElementsByTagName('pre');
+for (i=0; i<elems.length;i++) {
+  if (elems[i]) {
+    elems[i].innerHTML = elems[i].innerHTML.escapeHTML();
+  }
+}
+  </script>
+</body>
+</html>
