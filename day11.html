@@ -1,0 +1,68 @@
+<html>
+<head>
+  <title></title>
+
+  <script src="http://code.jquery.com/jquery.min.js"></script>
+  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+  <link rel="stylesheet" href="screens.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <h1>Day 2 <small><a href="index.html">back to index</a></small></h1>
+        <p>Today, we learned how to make clickable counters</p>
+
+        <p>First, we reviewed some material from last week:</p>
+
+        <ul>
+          <li>Create a function that takes in two parameters: color and food. When you run the function, it should pop up an alert box that says uses those inputs. For example, "My favorite color is red and I love pizza!" Or, "I sort of like green and I hate broccoli." <br>
+          Solution link: <a href="http://jsbin.com/payazo/1/edit?html,js,output">http://jsbin.com/payazo/1/edit?html,js,output</a>
+          </li>
+          <li>Write a function called volume that takes in 3 numbers, and multiplies them all together and spits out the result in an alert box <br>
+          Solution link:  <a href="http://jsbin.com/gifeye/1/edit">http://jsbin.com/gifeye/1/edit</a>
+          </li>
+          <li>Create a function called friend that takes in one parameter called name. The function should spit out an alert that looks like "My best friend is Sarah" <br>
+          <a href="http://jsbin.com/gevuni/1/edit">http://jsbin.com/gevuni/1/edit</a>
+          </li>
+        </ul>
+
+        <h3>The JavaScript Console</h3>
+        <iframe src="http://player.vimeo.com/video/123636222" width="700" height="394" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+        <h3>Incrementing variables</h3>
+        <iframe src="http://player.vimeo.com/video/123636487" width="700" height="394" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+        <h3>The onclick attribute</h3>
+        <iframe src="http://player.vimeo.com/video/123636830" width="700" height="394" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+        <h3>Changing HTML content with JavaScript</h3>
+        <iframe src="http://player.vimeo.com/video/123637267" width="700" height="394" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+        <h2>Homework</h2>
+
+        <p>Create a page with a counter and three clickable links: the first increases the counter by 1, the second increases the counter by 2 and the third increases the counter by 3. </p>
+
+      </div>
+    </div>
+  </div>
+  <footer></footer>
+  <script>
+String.prototype.escapeHTML = function () {
+  return(
+    this.replace(/>/g,'&gt;').
+         replace(/</g,'&lt;').
+         replace(/"/g,'&quot;')
+  );
+};
+var elems = document.getElementsByTagName('pre');
+for (i=0; i<elems.length;i++) {
+  if (elems[i]) {
+    elems[i].innerHTML = elems[i].innerHTML.escapeHTML();
+  }
+}
+  </script>
+</body>
+</html>
