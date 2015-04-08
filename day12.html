@@ -1,0 +1,59 @@
+<html>
+<head>
+  <title></title>
+
+  <script src="http://code.jquery.com/jquery.min.js"></script>
+  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+  <link rel="stylesheet" href="screens.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <h1>Day 3 <small><a href="index.html">back to index</a></small></h1>
+        <p>Today, we learned how to use conditional logic to get programs to make decisions</p>
+
+        <h3>Conditional logic</h3>
+        <iframe src="http://player.vimeo.com/video/124470714" width="700" height="394" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <p>Link to code: <a href="http://jsbin.com/qosaja/1/edit">http://jsbin.com/qosaja/1/edit</a></p>
+
+
+
+        <h3>Else if and equality</h3>
+        <iframe src="http://player.vimeo.com/video/124471613" width="700" height="394" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <p>Link to code: <a href="http://jsbin.com/boreju/1/edit">http://jsbin.com/boreju/1/edit</a></p>
+
+
+        <h3>Then we integrated if-else statements into our counter game.</h3>
+        <p>Link to code: <a href="http://jsbin.com/kasuke/1/edit">http://jsbin.com/kasuke/1/edit</a></p>
+
+
+        <h2>Homework</h2>
+
+        <p>Write code to pop up an alert box if the <code>counter</code> variable ever equals 21. </p>
+
+        <p><strong>Hint:</strong> use conditional logic inside the <code>addOne()</code> <code>addTwo()</code> and <code>addThree()</code> functions.</p>
+
+      </div>
+    </div>
+  </div>
+  <footer></footer>
+  <script>
+String.prototype.escapeHTML = function () {
+  return(
+    this.replace(/>/g,'&gt;').
+         replace(/</g,'&lt;').
+         replace(/"/g,'&quot;')
+  );
+};
+var elems = document.getElementsByTagName('pre');
+for (i=0; i<elems.length;i++) {
+  if (elems[i]) {
+    elems[i].innerHTML = elems[i].innerHTML.escapeHTML();
+  }
+}
+  </script>
+</body>
+</html>
